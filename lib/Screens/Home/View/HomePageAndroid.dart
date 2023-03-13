@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:settings_app/Screens/Home/Provider/HomeProvider.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreenAndroid extends StatefulWidget {
+  const HomeScreenAndroid({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeScreenAndroid> createState() => _HomeScreenAndroidState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenAndroidState extends State<HomeScreenAndroid> {
   HomeProvider? homeProvidertrue, homeProviderfalse;
 
   @override
