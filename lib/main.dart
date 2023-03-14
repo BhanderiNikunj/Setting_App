@@ -23,7 +23,7 @@ void main() {
 Widget androidView() {
   return MaterialApp(
     routes: {
-      '/': (context) => HomeScreenAndroid(),
+      '/': (context) => const HomeScreenAndroid(),
     },
   );
 }
@@ -31,7 +31,7 @@ Widget androidView() {
 Widget IOSView() {
   return CupertinoApp(
     routes: {
-      '/': (p0) => HomeScreenIos(),
+      '/': (p0) => const HomeScreenIos(),
     },
   );
 }

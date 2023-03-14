@@ -61,7 +61,7 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                               Row(
                                 children: [
                                   Icon(Icons.language,
-                                      color: CupertinoColors.black, size: 20),
+                                      color: Colors.black45, size: 20),
                                   SizedBox(
                                     width: 5,
                                   ),
@@ -76,8 +76,9 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                               Row(
                                 children: [
                                   Text("English"),
+                                  SizedBox(width: 10),
                                   Icon(Icons.arrow_forward_ios_outlined,
-                                      color: CupertinoColors.black, size: 15),
+                                      color: Colors.black45, size: 20),
                                 ],
                               ),
                             ],
@@ -87,19 +88,36 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                       Container(
                         height: 50,
                         width: double.infinity,
-                        child: Row(
-                          children: [
-                            SizedBox(width: 10),
-                            Icon(Icons.cloud_outlined,
-                                color: CupertinoColors.black, size: 20),
-                            SizedBox(width: 20),
-                            Text(
-                              "environment",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
-                            ),
-                            Text("production")
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(Icons.language,
+                                      color: Colors.black45, size: 20),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  Text(
+                                    "environment",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text("production"),
+                                  SizedBox(width: 10),
+                                  Icon(Icons.arrow_forward_ios_outlined,
+                                      color: Colors.black45, size: 20),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -125,14 +143,28 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                         height: 50,
                         width: double.infinity,
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(width: 10),
-                            Icon(Icons.call, color: Colors.black45, size: 20),
-                            SizedBox(width: 20),
-                            Text(
-                              "Phone Number",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            Row(
+                              children: [
+                                SizedBox(width: 10),
+                                Icon(Icons.call,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 20),
+                                Text(
+                                  "Phone Number",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 10),
+                              ],
                             ),
                           ],
                         ),
@@ -142,14 +174,28 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                         width: double.infinity,
                         decoration: BoxDecoration(),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(width: 10),
-                            Icon(Icons.email, color: Colors.black45, size: 20),
-                            SizedBox(width: 20),
-                            Text(
-                              "email",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            Row(
+                              children: [
+                                SizedBox(width: 10),
+                                Icon(Icons.email,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 20),
+                                Text(
+                                  "email",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 10),
+                              ],
                             ),
                           ],
                         ),
@@ -158,14 +204,28 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                         height: 50,
                         width: double.infinity,
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(width: 10),
-                            Icon(Icons.logout, color: Colors.black45, size: 20),
-                            SizedBox(width: 20),
-                            Text(
-                              "Sign out",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            Row(
+                              children: [
+                                SizedBox(width: 10),
+                                Icon(Icons.logout,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 20),
+                                Text(
+                                  "Sign out",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 10),
+                              ],
                             ),
                           ],
                         ),
@@ -215,6 +275,68 @@ class _HomeScreenIosState extends State<HomeScreenIos> {
                               value: homeProvidertrue!.s1,
                               onChanged: (value) {
                                 homeProviderfalse!.Chang1(value);
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 50,
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(width: 10),
+                                Icon(Icons.fingerprint,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 20),
+                                Text(
+                                  "Use FingerPrint",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                ),
+                              ],
+                            ),
+                            CupertinoSwitch(
+                              activeColor: Colors.red,
+                              thumbColor: Colors.white,
+                              value: homeProvidertrue!.s2,
+                              onChanged: (value) {
+                                homeProviderfalse!.Chang2(value);
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 50,
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(width: 10),
+                                Icon(Icons.lock,
+                                    color: Colors.black45, size: 20),
+                                SizedBox(width: 20),
+                                Text(
+                                  "Change Password",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
+                                ),
+                              ],
+                            ),
+                            CupertinoSwitch(
+                              activeColor: Colors.red,
+                              thumbColor: Colors.white,
+                              value: homeProvidertrue!.s3,
+                              onChanged: (value) {
+                                homeProviderfalse!.Chang3(value);
                               },
                             ),
                           ],
